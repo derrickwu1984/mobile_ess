@@ -32,8 +32,8 @@ class EssSpider(scrapy.Spider):
     initmy_url = "https://123.125.98.209/essframe"
 
     post_url = "https://bj.cbss.10010.com/acctmanm;"
-    # driver_path="D:/tools/IEDriverServer.exe"
-    driver_path = "Z:/tools/IEDriverServer.exe"
+    driver_path="D:/tools/IEDriverServer.exe"
+    # driver_path = "Z:/tools/IEDriverServer.exe"
     # driver_path = "C:/IEDriverServer.exe"
     userName = "bjsc-zhaomx6"
     passWd = "wang1985@"

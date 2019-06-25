@@ -54,7 +54,7 @@ class BdEssSpider(scrapy.Spider):
         return object
 
     def start_requests(self):
-        logging.warning("====================")
+        logging.warning("=========start_requests===========")
         yield scrapy.Request(self.login_url, callback=self.login)
     def login(self, response):
         self.driver.get(self.login_url)
@@ -92,5 +92,38 @@ class BdEssSpider(scrapy.Spider):
             'Host': 'bj.cbss.10010.com',
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'
         }
-        # yield scrapy.Request(request_url, headers=headers, cookies=cookie_out, callback=self.parse_broadbandNo,
-        #                      meta={'request_url': request_url})
+        yield scrapy.Request(request_url, headers=headers, cookies=cookie_out, callback=self.parse_broadbandNo,
+                             meta={'request_url': request_url})
+
+    def query_user_info(self,response):
+        Cookie = response.request.headers.getlist('Cookie')
+        response_str=response.body.decode("gbk")
+        refer_url=response.meta['userinfo_request_url']
+        # time.sleep(3)
+        html = etree.HTML(response_str)
+        DateField=""
+        _BoInfo=html.xpath('//input[@name="_BoInfo"]/@value')[0]
+        ACCPROVICE_ID=html.xpath('//input[@name="ACCPROVICE_ID"]/@value')[0]
+        allInfo=html.xpath('//input[@name="allInfo"]/@value')[0]
+        broadbandNo = response.meta['broadbandNo']
+        currentRightCode=html.xpath('//input[@name="currentRightCode"]/@value')[0]
+        Form0 = html.xpath('//input[@name="Form0"]/@value')[0]
+        PROVICE_ID= html.xpath('//input[@name="PROVICE_ID"]/@value')[0]
+        queryTradehide=html.xpath('//input[@name="queryTradehide"]/@value')[0]
+        service=html.xpath('//input[@name="service"]/@value')[0]
+        tabSetList=html.xpath('//input[@name="tabSetList"]/@value')[0]
+        headers={
+            # "Referer": "https://bj.cbss.10010.com/essframe?service=page/Sidebar,
+            # "Referer": "https://bj.cbss.10010.com/custserv",
+            "Referer":refer_url,
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko',
+            'Host': 'bj.cbss.10010.com'
+        }
+        cookies = self.get_cookie()
+        # del cookies["BSS_CUSTSERV_JSESSIONID"]
+        # del cookies["BSS_ACCTMANM_JSESSIONID"]
+        # json.dumps(cookies)
+        dataForm=self.custserv_dataForm(DateField,_BoInfo,ACCPROVICE_ID,allInfo,broadbandNo,ACCPROVICE_ID,currentRightCode,Form0,PROVICE_ID,queryTradehide,service,tabSetList)
+        post_intetrated_url="https://bj.cbss.10010.com/custserv"
+        yield scrapy.FormRequest(url=post_intetrated_url, formdata=dataForm, method="POST", headers=headers,cookies=cookies,
+                                 callback=self.get_user_property__info,meta={'broadbandNo': broadbandNo},dont_filter=True)

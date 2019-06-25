@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5185f469-dc24-4c9c-834b-7ba89fa20166" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proxies.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cbss.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cbss.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile_ess/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobile_ess/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile_ess/spiders/ess.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobile_ess/spiders/ess.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_ess/middlewares.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobile_ess/middlewares.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_ess/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobile_ess/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_ess/spiders/bd_ess.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobile_ess/spiders/bd_ess.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,7 +17,8 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/mobile_ess$ess.coverage" NAME="ess Coverage Results" MODIFIED="1561368308317" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mobile_ess/spiders" />
-    <SUITE FILE_PATH="coverage/mobile_ess$main.coverage" NAME="main Coverage Results" MODIFIED="1561428503412" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mobile_ess" />
+    <SUITE FILE_PATH="coverage/mobile_ess$proxies.coverage" NAME="proxies Coverage Results" MODIFIED="1561430727724" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mobile_ess$main.coverage" NAME="main Coverage Results" MODIFIED="1561447129530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mobile_ess" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -34,13 +35,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bd_ess.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bd_ess.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mobile_ess/spiders/bd_ess.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-552">
-              <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+            <state relative-caret-position="-1047">
+              <caret line="27" column="12" lean-forward="true" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
               <folding>
                 <element signature="e#24#64#0" expanded="true" />
+                <element signature="e#1392#1763#0" />
+                <element signature="e#1832#1910#0" />
+                <element signature="e#1950#2069#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="proxies.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/proxies.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2040">
+              <caret line="92" column="26" selection-start-line="92" selection-start-column="26" selection-end-line="92" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="proxies.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/proxies.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3384">
+              <caret line="141" column="27" selection-start-line="141" selection-end-line="141" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="middlewares.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mobile_ess/middlewares.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2640">
+              <caret line="111" column="27" selection-start-line="111" selection-start-column="6" selection-end-line="111" selection-end-column="27" />
+              <folding>
+                <element signature="e#169#195#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -67,11 +101,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mobile_ess/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="75">
+              <caret line="54" selection-start-line="54" selection-end-line="57" />
             </state>
           </provider>
         </entry>
@@ -87,11 +121,24 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>https://ess.10010.com/essframe/</find>
       <find>scrapy.Spider</find>
       <find>false</find>
+      <find>bs4</find>
+      <find>put</find>
+      <find>https://120.83.105.209:9999</find>
+      <find>download</find>
+      <find>webdriver.Ie</find>
+      <find>driver_path</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -101,10 +148,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/mobile_ess/items.py" />
-        <option value="$PROJECT_DIR$/mobile_ess/settings.py" />
         <option value="$PROJECT_DIR$/mobile_ess/spiders/ess.py" />
-        <option value="$PROJECT_DIR$/mobile_ess/spiders/bd_ess.py" />
         <option value="$PROJECT_DIR$/mobile_ess/main.py" />
+        <option value="$PROJECT_DIR$/proxies.py" />
+        <option value="$PROJECT_DIR$/mobile_ess/middlewares.py" />
+        <option value="$PROJECT_DIR$/mobile_ess/spiders/bd_ess.py" />
+        <option value="$PROJECT_DIR$/mobile_ess/settings.py" />
       </list>
     </option>
   </component>
@@ -139,12 +188,6 @@
               <item name="mobile_ess" type="b2602c69:ProjectViewProjectNode" />
               <item name="mobile_ess" type="462c0819:PsiDirectoryNode" />
               <item name="mobile_ess" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mobile_ess" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile_ess" type="462c0819:PsiDirectoryNode" />
-              <item name="mobile_ess" type="462c0819:PsiDirectoryNode" />
-              <item name="spiders" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -216,13 +259,34 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="proxies" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="mobile_ess" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/proxies.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <list>
       <item itemvalue="Python.main" />
       <item itemvalue="Python.ess" />
+      <item itemvalue="Python.proxies" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.proxies" />
         <item itemvalue="Python.ess" />
       </list>
     </recent_temporary>
@@ -242,15 +306,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38512397" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26172465" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29256198" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3289256" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16944024" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -274,10 +339,267 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/mobile_ess/spiders/bd_ess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2280">
+          <caret line="95" column="63" lean-forward="true" selection-start-line="95" selection-start-column="63" selection-end-line="95" selection-end-column="63" />
+          <folding>
+            <element signature="e#24#64#0" expanded="true" />
+            <element signature="e#1392#1763#0" />
+            <element signature="e#1832#1910#0" />
+            <element signature="e#1950#2069#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proxies.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2208">
+          <caret line="92" column="26" selection-start-line="92" selection-start-column="26" selection-end-line="92" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proxies.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3384">
+          <caret line="141" column="27" selection-start-line="141" selection-end-line="141" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile_ess/middlewares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2664">
+          <caret line="111" column="27" selection-start-line="111" selection-start-column="6" selection-end-line="111" selection-end-column="27" />
+          <folding>
+            <element signature="e#169#195#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy.cfg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile_ess/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile_ess/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile_ess/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1296">
+          <caret line="54" selection-start-line="54" selection-end-line="56" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile_ess/spiders/ess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="71" selection-start-line="71" selection-end-line="108" selection-end-column="61" />
+          <folding>
+            <element signature="e#24#64#0" expanded="true" />
+            <element signature="e#2210#4257#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile_ess/spiders/bd_ess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="41" column="30" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
+          <folding>
+            <element signature="e#24#64#0" expanded="true" />
+            <element signature="e#1392#1763#0" />
+            <element signature="e#1832#1910#0" />
+            <element signature="e#1950#2069#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proxies.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2040">
+          <caret line="92" column="26" selection-start-line="92" selection-start-column="26" selection-end-line="92" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proxies.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3384">
+          <caret line="141" column="27" selection-start-line="141" selection-end-line="141" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy.cfg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile_ess/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile_ess/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile_ess/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile_ess/middlewares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2472">
+          <caret line="103" selection-start-line="103" selection-end-line="103" />
+          <folding>
+            <element signature="e#169#195#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile_ess/spiders/ess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="71" selection-start-line="71" selection-end-line="108" selection-end-column="61" />
+          <folding>
+            <element signature="e#24#64#0" expanded="true" />
+            <element signature="e#2210#4257#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy.cfg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile_ess/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile_ess/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile_ess/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile_ess/spiders/bd_ess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="30" column="29" lean-forward="true" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+          <folding>
+            <element signature="e#24#64#0" expanded="true" />
+            <element signature="e#1392#1763#0" />
+            <element signature="e#1832#1910#0" />
+            <element signature="e#1950#2069#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile_ess/spiders/ess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="71" selection-start-line="71" selection-end-line="108" selection-end-column="61" />
+          <folding>
+            <element signature="e#24#64#0" expanded="true" />
+            <element signature="e#2210#4257#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy.cfg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile_ess/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile_ess/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile_ess/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile_ess/spiders/bd_ess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+          <folding>
+            <element signature="e#24#64#0" expanded="true" />
+            <element signature="e#1392#1763#0" />
+            <element signature="e#1832#1910#0" />
+            <element signature="e#1950#2069#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mobile_ess/spiders/ess.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1224">
@@ -326,6 +648,9 @@
           <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
           <folding>
             <element signature="e#24#64#0" expanded="true" />
+            <element signature="e#1392#1763#0" />
+            <element signature="e#1832#1910#0" />
+            <element signature="e#1950#2069#0" />
           </folding>
         </state>
       </provider>
@@ -372,13 +697,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mobile_ess/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../envs/ess/Lib/site-packages/scrapy/spiders/__init__.py" />
     <entry file="file://$PROJECT_DIR$/../envs/ess/Lib/site-packages/twisted/internet/defer.py" />
     <entry file="file://$PROJECT_DIR$/scrapy.cfg">
@@ -409,13 +727,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://E:/envs/ess/Lib/site-packages/selenium/webdriver/support/select.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="86" selection-start-line="86" selection-end-line="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proxies.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2040">
+          <caret line="92" column="26" selection-start-line="92" selection-start-column="26" selection-end-line="92" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proxies.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3384">
+          <caret line="141" column="27" selection-start-line="141" selection-end-line="141" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile_ess/middlewares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2640">
+          <caret line="111" column="27" selection-start-line="111" selection-start-column="6" selection-end-line="111" selection-end-column="27" />
+          <folding>
+            <element signature="e#169#195#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mobile_ess/spiders/bd_ess.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-552">
-          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+        <state relative-caret-position="-1047">
+          <caret line="27" column="12" lean-forward="true" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
           <folding>
             <element signature="e#24#64#0" expanded="true" />
+            <element signature="e#1392#1763#0" />
+            <element signature="e#1832#1910#0" />
+            <element signature="e#1950#2069#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile_ess/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="54" selection-start-line="54" selection-end-line="57" />
         </state>
       </provider>
     </entry>
